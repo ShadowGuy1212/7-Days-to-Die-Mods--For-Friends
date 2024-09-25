@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="MeanOnesAdvancedHUDv1" />
+    <DisplayName value="MeanOnes Advanced Hud v1" />
+    <Description value="A simple Hud mod for QOL addin. Incudes temperature, health, compass tweaks, stamina, health, food,etc" />
+    <Author value="TheMeanOneMods" />
+    <Version value="1.0" />
+	  <Website value="https://discord.gg/S8AQEZwQAV" />
+</xml>

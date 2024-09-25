@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text
+
+TM1_AdvancedDewCollector,blocks,Block,,,[00FFFF]TM1 Advanced Dew Collector[-]
+TM1_AdvancedDewCollectorDesc,blocks,Block,,,[00FFFF]Collects water over time. Can be modified with tools to increase efficiency.,,
