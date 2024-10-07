@@ -1,0 +1,21 @@
+<configs>
+
+
+	<!-- PERSONALIZED STYLE IN SQUARES -->
+	<!-- Eliminate all this if you are going to use the default style -->
+
+	<append xpath="//window[@name='windowCraftingList']/panel[@name='content']">
+		<sprite name="backgroundMain" depth="1" sprite="menu_empty3px" pos="0,-98" width="396" height="550" color="[black]" type="sliced" fillcenter="false" />
+		<sprite name="backgroundGrid" depth="-1" pos="3,-100" width="391" height="546" color="[darkGrey]" type="sliced" />
+	</append>
+
+	<set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@rows">7</set>
+	<set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@cols">5</set>
+	<set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@pos">6,-103</set>
+	<set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@width">77</set>
+	<set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@height">77</set>
+	<set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@cell_width">77</set>
+	<set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@cell_height">77</set>
+	<set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@arrangement">horizontal</set>
+
+</configs>
