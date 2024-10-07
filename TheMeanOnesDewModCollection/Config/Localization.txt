@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context 
+workstationsT1-DewGatherer,progression,Attribute,,,"[33FFE3]Tier 1: Gatherer[-] - A basic dew collector that gathers water from the environment.",,,,,,,,,,,,,
+workstationsT2-DewTarp,progression,Attribute,,,"[33FF66]Tier 2: Tarp[-] - A tarp that increases water collection efficiency.",,,,,,,,,,,,,
+workstationsT3-DewFilter,progression,Attribute,,,"[FF66CC]Tier 3: Water Filter[-] - A filter that purifies collected water, making it safe to drink.",,,,,,,,,,,,,

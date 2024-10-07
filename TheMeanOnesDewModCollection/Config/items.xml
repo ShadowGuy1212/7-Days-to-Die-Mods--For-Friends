@@ -1,0 +1,13 @@
+<configs>
+    <!-- 
+    This configuration ensures that the 'toolDewTarp' item is added to the 'CFChemicals' group.
+    Grouping items allows for easier categorization and management within the game. 
+    Being part of the 'CFChemicals' group may apply certain effects or categorize the item
+    alongside other similar items for crafting, sorting, or game logic purposes.
+    -->
+    
+    <append xpath="/items/item[@name='toolDewTarp']/property[@name='Group']">
+        <!-- Set the Group property to include 'CFChemicals' -->
+        <property name="Group" value="CFChemicals"/>
+    </append>
+</configs>

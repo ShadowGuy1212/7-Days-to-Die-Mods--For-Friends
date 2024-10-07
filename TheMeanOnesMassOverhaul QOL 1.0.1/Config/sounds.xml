@@ -1,0 +1,17 @@
+<Sounds>
+	<!-- Removing the sound associated with solar panel idle state -->
+	<Remove xpath="/Sounds/SoundDataNode[@name='solarpanel_idle']"/>
+	
+	<!-- Removing the sound associated with the generator running state -->
+	<Remove xpath="/Sounds/SoundDataNode[@name='generator_run']"/>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Sounds>

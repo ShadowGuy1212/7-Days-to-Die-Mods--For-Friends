@@ -1,0 +1,16 @@
+<configs>
+	<!-- Buff adjustments  -->
+	<set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity'][@operation='base_set']/@operation">base_add</set>
+    
+	<!-- Buff adjustments -->
+	<set xpath="/buffs/buff[@name='buffEncumberedInv']/effect_group/triggered_effect[@value='0.026']/@value">0.0234</set>
+	<set xpath="/buffs/buff[@name='god']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+	<set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+	<set xpath="/buffs/buff[@name='twitch_buffPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+	<set xpath="/buffs/buff[@name='twitch_buffEncumbered']/effect_group/passive_effect[@name='CarryCapacity']/@value">30</set>
+	
+	<!-- Removing the stamina drain effect when holding breath while aiming -->
+	<remove xpath="/buffs/buff[@name='buffHoldBreathAiming01']/effect_group/passive_effect[@name='StaminaChangeOT']"/>
+	
+	
+</configs>

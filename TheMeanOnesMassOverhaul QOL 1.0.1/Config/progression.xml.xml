@@ -1,0 +1,60 @@
+
+<configs>
+	<!-- Merged changes for perkPackMule -->
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">6,12,18,24,30</set>
+
+	<!-- Insert requirement for Fireman's Almanac Complete -->
+	<insertAfter xpath="/progression/perks/book[@name='perkFiremansAlmanacComplete']//requirement[@name='InBiome']">
+		<requirement name="!HasBuff" buff="twitch_buffEncumbered"/>
+	</insertAfter>
+
+	<!-- Set carry capacity for Fireman's Almanac and Night Stalker books -->
+	<set xpath="/progression/perks/book[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">30</set>
+	<set xpath="/progression/perks/book[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">30</set>
+	
+	
+	
+	<!-- TheMeanOnes Progressive Harvest Rates Mod -->
+	<append xpath="/progression/attributes/attribute[@name='attPerception']/effect_group">
+		<!-- 
+        Balanced Harvest Rates Based on Perception Attribute
+
+        This configuration sets different harvest rates depending on the player's Perception attribute level.
+        The harvest rate gradually increases as the Perception attribute is leveled up, providing a sense of progression
+        without becoming too overpowered.
+
+        Syntax:
+        - level="X,Y": Defines the range of Perception levels this effect applies to.
+        - value="Z": Sets the harvest rate multiplier.
+
+        Example:
+        - At level 0-1: value="1.0" (100% normal harvest rate).
+        - At level 2-3: value="1.2" (120% of the normal harvest rate).
+        - At level 4-5: value="1.4" (140% of the normal harvest rate).
+        - At level 6-7: value="1.6" (160% of the normal harvest rate).
+        - At level 8-9: value="1.8" (180% of the normal harvest rate).
+        - At level 10: value="2.0" (200% of the normal harvest rate).
+
+        These values ensure a gradual increase in resource yield without significantly disrupting game balance.
+        -->
+		<passive_effect name="HarvestCount" operation="perc_add" level="0,1" value="1.0"/><!-- 100% Harvest Rate -->
+		<passive_effect name="HarvestCount" operation="perc_add" level="2,3" value="1.2"/><!-- 120% Harvest Rate -->
+		<passive_effect name="HarvestCount" operation="perc_add" level="4,5" value="1.4"/><!-- 140% Harvest Rate -->
+		<passive_effect name="HarvestCount" operation="perc_add" level="6,7" value="1.6"/><!-- 160% Harvest Rate -->
+		<passive_effect name="HarvestCount" operation="perc_add" level="8,9" value="1.8"/><!-- 180% Harvest Rate -->
+		<passive_effect name="HarvestCount" operation="perc_add" level="10,10" value="2.0"/><!-- 200% Harvest Rate -->
+	</append>
+	
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[3]/unlock_entry/@item">carBattery,solarCell</set>
+	<set xpath="/progression/crafting_skills[1]/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[4]/@tags">carBattery,solarCell</set>
+	<set xpath="/progression/crafting_skills[1]/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[5]/@tags">carBattery,solarCell</set>
+
+	<!--
+	<append xpath="/progression/crafting_skills[1]/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[4]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="solarCell"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="65,75,85,95,100" value="1,2,3,4,5" tags="solarCell"/>
+	</append>
+	-->
+
+	
+</configs>

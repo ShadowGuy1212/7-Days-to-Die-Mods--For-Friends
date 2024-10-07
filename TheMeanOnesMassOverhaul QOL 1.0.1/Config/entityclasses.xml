@@ -1,0 +1,20 @@
+<configs>
+	<!-- Set CarryCapacity to 30 -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">30</set>
+    
+	<!-- Set BagSize to 60 -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">60</set>
+	
+	
+	
+	<!-- This XML configuration sets the time duration for loot containers to stay after the entity's death -->
+
+	<!-- Sets the time for 'DroppedLootContainer' to stay after death to 300 seconds (5 minutes) -->
+	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">300</set>
+
+	<!-- Sets the time for all 'EntityLootContainer' entities to stay after death to 2700 seconds (45 minutes) -->
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">2700</set>
+  
+  
+
+</configs>

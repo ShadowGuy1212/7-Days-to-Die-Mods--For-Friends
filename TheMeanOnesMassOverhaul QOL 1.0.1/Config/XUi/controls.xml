@@ -1,0 +1,69 @@
+<configs>
+	<!-- Crafting Info Panel Ingredient List Header (ingredient_header)-->
+	<set xpath="//ingredient_header/rect[@name='header']/@width">514</set>
+
+	<set xpath="//ingredient_header/rect[@name='header']/rect[1]/@width">87</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[1]/sprite/@width">93</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[1]/label/@pos">43,-23</set>
+
+	<set xpath="//ingredient_header/rect[@name='header']/rect[2]/@width">259</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[2]/@pos">90,0</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[2]/sprite/@width">265</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[2]/label/@pos">129,-23</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[2]/label/@width">253</set>
+
+	<set xpath="//ingredient_header/rect[@name='header']/rect[3]/@width">162</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[3]/@pos">352,0</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[3]/sprite/@width">168</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[3]/label/@pos">81,-23</set>
+	<set xpath="//ingredient_header/rect[@name='header']/rect[3]/label/@width">66</set>
+
+	<!-- Crafting Info Panel Ingredient List (ingredient_row)-->
+	<set xpath="//ingredient_row/rect[@name='row']/@width">514</set>
+
+	<set xpath="//ingredient_row/rect[@name='row']/rect[1]/@width">87</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[1]/sprite[@name='backgroundMain']/@width">93</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[1]/sprite[@name='icon']/@pos">41,-22</set>
+
+	<set xpath="//ingredient_row/rect[@name='row']/rect[2]/@width">259</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[2]/@pos">90,0</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[2]/sprite/@width">265</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[2]/label/@pos">129,-23</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[2]/label/@width">253</set>
+
+	<set xpath="//ingredient_row/rect[@name='row']/rect[3]/@width">162</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[3]/@pos">352,0</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[3]/sprite/@width">168</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[3]/label/@pos">81,-23</set>
+	<set xpath="//ingredient_row/rect[@name='row']/rect[3]/label/@width">142</set>
+
+	<!-- Crafting Info Panel (Unlocked By) Ingredient List Header (unlocked_by_header)-->
+	<set xpath="//unlocked_by_header/rect[@name='header']/@width">514</set>
+
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[1]/@width">87</set>
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[1]/sprite/@width">93</set>
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[1]/label/@pos">43,-23</set>
+
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[2]/@width">332</set>
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[2]/@pos">90,0</set>
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[2]/sprite/@width">337</set>
+
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[3]/@width">93</set>
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[3]/@pos">424,0</set>
+	<set xpath="//unlocked_by_header/rect[@name='header']/rect[3]/sprite/@width">95</set>
+
+	<!-- Crafting Info Panel (Unlocked By) Ingredient List (unlocked_by_row)-->
+	<set xpath="//unlocked_by_row/rect[@name='row']/@width">514</set>
+
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[1]/@width">87</set>
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[1]/sprite[@name='backgroundMain']/@width">93</set>
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[1]/sprite[@name='icon']/@pos">41,-22</set>
+
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[2]/@width">332</set>
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[2]/@pos">90,0</set>
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[2]/sprite/@width">337</set>
+
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[3]/@width">93</set>
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[3]/@pos">424,0</set>
+	<set xpath="//unlocked_by_row/rect[@name='row']/rect[3]/sprite/@width">95</set>
+</configs>

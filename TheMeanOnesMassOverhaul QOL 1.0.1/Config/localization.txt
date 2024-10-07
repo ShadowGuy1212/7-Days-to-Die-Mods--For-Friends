@@ -1,0 +1,3 @@
+Key,english
+TM1_UniversalMagazine, TM1 Universal Magazine Extender[-]
+TM1_UniversalMagazineDesc,A versatile magazine extender compatible with most firearms. It increases magazine capacity by 5 rounds. Ideal for prolonged engagements.

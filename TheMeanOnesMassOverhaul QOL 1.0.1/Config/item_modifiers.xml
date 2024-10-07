@@ -1,0 +1,17 @@
+<config>
+	<append xpath="/item_modifiers">
+
+		<item_modifier name="TM1_UniversalMagazine" installable_tags="gun,ranged" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modGunMagazineExtender"/>
+		    <property name="CustomIconTint" value="00FFFF"/> <!-- Cyan tint -->
+			<property name="UnlockedBy" value="modGunMagazineExtenderSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+    
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="base_add" value="5"/>
+			</effect_group>
+		</item_modifier>
+
+	</append>
+</config>

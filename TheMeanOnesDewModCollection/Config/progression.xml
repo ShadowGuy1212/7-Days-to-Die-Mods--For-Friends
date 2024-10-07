@@ -1,0 +1,54 @@
+﻿<progression>
+    <!-- Dew Gatherer Unlock at Level 2 -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cntDewCollector,forge']/unlock_entry[@item='forge']/@item">
+        ,toolDewGatherer
+    </append>
+    <!-- Name Key for Dew Gatherer Unlock -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cntDewCollector,forge']/@name_key">
+        ,workstationsT1-DewGatherer
+    </append>
+    <!-- Unlock Level for Dew Gatherer -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cntDewCollector,forge']/@unlock_level">
+        ,2
+    </append>
+    <!-- Tag for Unlocking the Dew Gatherer Recipe -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='2,100']/@tags">
+        ,toolDewGatherer
+    </append>
+    
+    <!-- Dew Tarp Unlock at Level 5 -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='workbench,resourceLockPick,toolBellows,toolAnvil']/unlock_entry[@item='workbench']/@item">
+        ,toolDewTarp
+    </append>
+    <!-- Name Key for Dew Tarp Unlock -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='workbench,resourceLockPick,toolBellows,toolAnvil']/@name_key">
+        ,workstationsT1-DewTarp
+    </append>
+    <!-- Unlock Level for Dew Tarp -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='workbench,resourceLockPick,toolBellows,toolAnvil']/@unlock_level">
+        ,5
+    </append>
+    <!-- Tag for Unlocking the Dew Tarp Recipe -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='5,100']/@tags">
+        ,toolDewTarp
+    </append>
+    
+    <!-- Dew Filter Unlock at Level 15 -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cementMixer']/unlock_entry[@item='cementMixer']/@item">
+        ,toolDewFilter
+    </append>
+    <!-- Name Key for Dew Filter Unlock -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cementMixer']/@name_key">
+        ,workstationsT1-DewFilter
+    </append>
+    <!-- Unlock Level for Dew Filter -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cementMixer']/@unlock_level">
+        ,15
+    </append>
+    <!-- Tag for Unlocking the Dew Filter Recipe -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='15,100']/@tags">
+        ,toolDewFilter
+    </append>
+</progression>
+
+

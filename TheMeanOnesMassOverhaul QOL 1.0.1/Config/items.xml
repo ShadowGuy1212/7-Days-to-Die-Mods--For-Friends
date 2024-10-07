@@ -1,0 +1,80 @@
+<items>
+
+	<!-- 
+  TheMeanOneMods - Stack Overhaul 1.0.2
+  Version: 1.0.0
+  Last Updated: August 17, 2024
+
+  Mod Author: TheMeanOneMods Team
+  Discord: https://discord.gg/WRy7mBH7hZ
+
+  Changelog:
+  v1.0.0 - Initial release with customized stack sizes for all categories.
+  v1.0.1 - Updated Layout to reflect entire item categories for ease of use and additional customization.
+
+  Compatibility:
+  - Compatible with 7 Days to Die Alpha 1.0 Stable 
+  - Server Side Compatable, no need for client install.
+
+  Notes and Warnings:
+  - Ensure that no other mods conflict with stack size modifications.
+  - Recommended game settings: Survival mode, difficulty set to Warrior.
+  - Backup your save files before applying this mod to prevent any potential issues.
+-->
+
+	<!-- Tool Category -->
+	<!-- Adjusts stack sizes for all items starting with 'tool' -->
+	<set xpath="/items/item[starts-with(@name, 'tool')]/property[@name='Stacknumber']/@value">5000</set>
+
+	<!-- Resource Category -->
+	<!-- Adjusts stack sizes for all items starting with 'resource' -->
+	<set xpath="/items/item[starts-with(@name, 'resource')]/property[@name='Stacknumber']/@value">8000</set>
+  
+	<!-- Ammo Category -->
+	<!-- Adjusts stack sizes for all items starting with 'ammo' -->
+	<set xpath="/items/item[starts-with(@name, 'ammo')]/property[@name='Stacknumber']/@value">2500</set>
+
+	<!-- Thrown Weapons Category -->
+	<!-- Adjusts stack sizes for all items starting with 'thrown' -->
+	<set xpath="/items/item[starts-with(@name, 'thrown')]/property[@name='Stacknumber']/@value">8000</set>
+
+	<!-- Book Category -->
+	<!-- Adjusts stack sizes for all items starting with 'book' -->
+	<set xpath="/items/item[starts-with(@name, 'book')]/property[@name='Stacknumber']/@value">50</set>
+
+	<!-- Medical Category -->
+	<!-- Adjusts stack sizes for all items starting with 'medical' -->
+	<set xpath="/items/item[starts-with(@name, 'medical')]/property[@name='Stacknumber']/@value">500</set>
+
+	<!-- AmmoGasCan -->
+	<!-- Adjusts stack size for 'ammoGasCan' specifically -->
+	<set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">20000</set>
+
+	<!-- Drug Category -->
+	<!-- Adjusts stack sizes for all items starting with 'drug' -->
+	<set xpath="/items/item[starts-with(@name, 'drug')]/property[@name='Stacknumber']/@value">500</set>
+
+	<!-- Drink Category -->
+	<!-- Adjusts stack sizes for all items starting with 'drink' -->
+	<set xpath="/items/item[starts-with(@name, 'drink')]/property[@name='Stacknumber']/@value">75</set>
+
+	<!-- Food Category -->
+	<!-- Adjusts stack sizes for all items starting with 'food' -->
+	<set xpath="/items/item[starts-with(@name, 'food')]/property[@name='Stacknumber']/@value">250</set>
+
+	<!-- Specific Items -->
+	<!-- Adjusts stack sizes for individual items not covered by the above categories -->
+	<set xpath="/items/item[@name='partsMaster']/property[@name='Stacknumber']/@value">9000</set>
+	<set xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Stacknumber']/@value">9000</set>
+	<set xpath="/items/item[@name='schematicMaster']/property[@name='Stacknumber']/@value">9000</set>
+	<set xpath="/items/item[@name='blankNoteMaster']/property[@name='Stacknumber']/@value">9000</set>
+	<set xpath="/items/item[@name='candle']/property[@name='Stacknumber']/@value">9000</set>
+	<set xpath="/items/item[@name='meleeToolTorch']/property[@name='Stacknumber']/@value">9000</set>
+	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">90000</set>
+  
+	<append xpath="/items/item[@name='solarCell']">
+		<property name="UnlockedBy" value="craftingElectrician"/>
+	</append>
+	
+	
+</items>

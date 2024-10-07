@@ -1,0 +1,39 @@
+<configs>
+  <append xpath="/recipes">
+    
+    <!-- Tool Dew Tarp Recipe -->
+    <!-- This recipe allows the player to craft the 'Tool Dew Tarp' item. 
+         It requires 20 Cloth and 15 Scrap Polymers, and must be crafted at a campfire 
+         using a Cooking Pot. The crafting time is set to 45 seconds. 
+         The 'learnable' tag means this recipe can be learned by the player. -->
+    <recipe name="toolDewTarp" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+      <ingredient name="resourceCloth" count="20" />
+      <ingredient name="resourceScrapPolymers" count="15" />
+    </recipe>
+
+    <!-- Tool Dew Gatherer Recipe -->
+    <!-- This recipe allows the player to craft the 'Tool Dew Gatherer' item.
+         The 'learnable' tag indicates that the recipe can be learned by the player. -->
+    <recipe name="toolDewGatherer" count="1" craft_time="90" tags="learnable">
+      <ingredient name="resourceScrapPolymers" count="350" />
+    </recipe>
+
+    <!-- Tool Dew Filter Recipe -->
+    <!-- This recipe allows the player to craft the 'Tool Dew Filter' item.
+         It requires 15 Scrap Polymers, 10 Cloth, 10 Crushed Sand, 8 Coal, 2 Glue, 
+         and 1 rawDiamond. This recipe must be crafted at a workbench, 
+         with a crafting time of 150 seconds. The 'workbenchCrafting' tag 
+         restricts the crafting location to a workbench, and the 'learnable' tag 
+         indicates that the recipe can be learned by the player. -->
+    <recipe name="toolDewFilter" count="1" craft_time="150" craft_area="workbench" tags="workbenchCrafting,learnable">
+      <ingredient name="resourceScrapPolymers" count="15" />
+      <ingredient name="resourceCloth" count="10" />
+      <ingredient name="resourceCrushedSand" count="10" />
+      <ingredient name="resourceCoal" count="8" />
+      <ingredient name="resourceGlue" count="2" />
+    </recipe>
+
+  </append>
+</configs>
+
+

@@ -1,6 +1,0 @@
-<JC_UnbarricadedDoors>
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@unlock_level='75']/unlock_entry/@item">,JC_elevatorDoor_BlockVariantHelper</append>
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='75,100']/@tags">,JC_elevatorDoor_BlockVariantHelper</append>
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@unlock_level='75']/unlock_entry/@item">,JC_ironGarageDoor_Powered_NoBarricadeBlockVariantHelper</append>
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='75,100']/@tags">,JC_ironGarageDoor_Powered_NoBarricadeBlockVariantHelper</append>
-</JC_UnbarricadedDoors>

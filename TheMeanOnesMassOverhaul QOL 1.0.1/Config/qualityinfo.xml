@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MeanQuality>
+	<set xpath="/qualityinfo">
+		<!--Broken-->
+		<quality key="0" color="FF6F61"/><!-- Soft Coral -->
+		<!--Junk -->
+		<quality key="1" color="A5D6A7"/><!-- Light Pastel Green -->
+		<!--Common-->
+		<quality key="2" color="CFD8DC"/><!-- Light Pastel Blue -->
+		<!--Uncommon-->
+		<quality key="3" color="FFD54F"/><!-- Pastel Yellow -->
+		<!--Rare-->
+		<quality key="4" color="64B5F6"/><!-- Light Pastel Blue -->
+		<!--Epic-->
+		<quality key="5" color="BA68C8"/><!-- Light Pastel Purple -->
+		<!--Legendary-->
+		<quality key="6" color="FFA726"/><!-- Light Pastel Orange -->
+	</set>
+
+</MeanQuality>

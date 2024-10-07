@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+  <!-- This configuration adjusts the Dew Collector's behavior. -->
+
+  <!-- Tarp Inserted Into Dew Collector -->
+  <!-- This line sets the 'ModdedConvertCount' property to 4. 
+       'ModdedConvertCount' controls the quantity of items (such as water) 
+       that the Dew Collector produces each time it operates. 
+       The default value was 2, meaning this change doubles the output. -->
+  <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='ModdedConvertCount']/@value">4</set> <!-- Standard Is 2 -->
+
+  <!-- Gather Inserted Into Dew Collector -->
+  <!-- This line sets the 'ModdedConvertSpeed' property to 4.
+       'ModdedConvertSpeed' controls how quickly the Dew Collector performs 
+       its operation (such as collecting dew). 
+       The default value was 2, meaning this change doubles the speed of the process. -->
+  <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='ModdedConvertSpeed']/@value">4</set> <!-- Standard Is 2 -->
+</configs>

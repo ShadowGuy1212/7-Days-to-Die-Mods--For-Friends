@@ -1,0 +1,212 @@
+<configs>
+
+	<!--
+    Disclaimer: This XML configuration is provided by TheMeanOneMods. It includes various modifications to the game's UI elements,
+	blocks, and rotation settings. Please make sure to backup your original files before applying these changes. 
+	TheMeanOneMods is not responsible for any issues that may arise from using this configuration.
+-->
+	<remove xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud'][@pos='9,156']"/>
+	<remove xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud'][@pos='90,132']"/>
+	<remove xpath="/windows/window[@name='windowCompass']/sprite[@sprite=''][@color='255,255,255,255']"/>
+
+	<insertBefore xpath="/windows/window[@name='HUDLeftStatBars']">
+		<window name="window_THEMEANONE_toolbeltSlotNumbers" depth="13" width="603" height="22" pos="-410,85" anchor="CenterBottom" controller="ToolbeltWindow" visible="{toolbeltvisible}">
+			<label name="label_toolbeltSlot1" pos="22,0" width="22" height="22" text="  [DECEA3]1" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot2" pos="97,0" width="22" height="22" text="  [DECEA3]2" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot3" pos="172,0" width="22" height="22" text="  [DECEA3]3" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot4" pos="247,0" width="22" height="22" text="  [DECEA3]4" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot5" pos="322,0" width="22" height="22" text="  [DECEA3]5" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot6" pos="397,0" width="22" height="22" text="  [DECEA3]6" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot7" pos="472,0" width="22" height="22" text="  [DECEA3]7" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot8" pos="547,0" width="22" height="22" text="  [DECEA3]8" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot9" pos="622,0" width="22" height="22" text="  [DECEA3]9" font_size="20" justify="center" effect="outline"/>
+			<label name="label_toolbeltSlot0" pos="697,0" width="22" height="22" text="  [DECEA3]0" font_size="20" justify="center" effect="outline"/>
+		</window>
+	</insertBefore>
+
+	<append xpath="windows/window[@name='HUDLeftStatBars']">
+
+		<rect name="hud" pos="9,154" rows="2" cols="1" width="147" side="right">
+			<rect width="150" height="35" pos="0,-33" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+				<sprite depth="2" name="background" color="0,0,0,140" type="sliced"/>
+				<filledsprite depth="3" name="background" color="110,110,110,128" width="144" height="29" pos="3,-3" type="filled" fill="{statmodifiedmax}"/>
+				<filledsprite depth="5" name="BarContent" color="{stealthcolor}" width="144" height="29" pos="3,-3" type="filled" fill="0"/>
+				<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="29,29" pos="26,-17" pivot="center" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="44,-18" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="104" height="22"/>
+			</rect>
+
+			<rect width="150" height="35" pos="0,-111" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+				<sprite depth="2" name="background" color="0,0,0,140" type="sliced"/>
+				<filledsprite depth="3" name="background" color="110,110,110,128" width="144" height="29" pos="3,-3" type="filled" fill="{statmodifiedmax}"/>
+				<filledsprite depth="4" name="BarContent" color="173,216,230,128" width="144" height="29" pos="3,-3" type="filled" fill="0"/>
+				<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" size="29,29" pos="26,-18" pivot="center" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="44,-18" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="104" height="24"/>
+			</rect>
+
+			<rect width="150" height="35" pos="0,-72" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+				<sprite depth="2" name="background" color="0,0,0,140" type="sliced"/>
+				<filledsprite depth="3" name="background" color="110,110,110,128" width="144" height="29" pos="3,-3" type="filled" fill="{statmodifiedmax}"/>
+				<filledsprite depth="5" name="BarContent" color="255,0,0,128" width="144" height="29" pos="3,-3" type="filled" fill="0"/>
+				<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="25,25" pos="26,-18" pivot="center" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="44,-18" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="104" height="22"/>
+			</rect>
+
+			<rect width="150" height="35" pos="154,-72" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+				<sprite depth="2" name="background" color="0,0,0,140" type="sliced"/>
+				<filledsprite depth="3" name="background" color="110,110,110,128" width="144" height="29" pos="3,-3" type="filled" fill="{statmodifiedmax}"/>
+				<filledsprite depth="5" name="BarContent" color="144,238,144,128" width="144" height="29" pos="3,-3" type="filled" fill="0"/>
+				<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="25,25" pos="26,-18" pivot="center" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="44,-18" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="104" height="22"/>
+			</rect>
+
+			<rect width="150" height="35" pos="154,-111" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+				<sprite depth="2" name="background" color="0,0,0,140" type="sliced"/>
+				<filledsprite depth="3" name="background" color="110,110,110,128" width="144" height="29" pos="3,-3" type="filled" fill="{statmodifiedmax}"/>
+				<filledsprite depth="5" name="BarContent" color="0,204,204,128" width="144" height="29" pos="3,-3" type="filled" fill="0"/>
+				<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="25,25" pos="26,-18" pivot="center" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="44,-18" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="104" height="22"/>
+			</rect>
+
+		</rect>
+
+		<rect name="hud" pos="80,103" side="left" controller="BuffPopoutList" pivot="BottomLeft">
+			<panel width="147" height="35" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 5" style="press" sound="[recipe_click]" on_hover="true">
+				<sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="35" width="141" pivot="center" flip="Horizontally" color="[transparent]"/>
+				<sprite depth="4" name="Icon" size="29,29" pos="-54,0" pivot="center" color="[transparent]"/>
+				<label depth="6" name="TextContent" pos="-37,0" font_size="28" color="[white]" justify="center" width="118" height="30" pivot="left"/>
+			</panel>
+		</rect>
+		
+	</append>
+	
+	<insertAfter xpath="/windows/window[@name='windowCompass']/texture[@name='compassTexture3']">
+		<rect name="rect_compassStats" pos="0,-5">
+			<sprite name="sprite_compassStatsBackground" depth="0" pos="48,-39" width="384" height="24" type="sliced" fillcenter="false" color="0,0,0,100" sprite="ui_game_header_fill"/>
+			
+			<sprite name="sprite_compassClock" depth="2" pos="50,-41" size="20,20" sprite="ui_game_symbol_clock" color="*" foregroundlayer="true"/>
+			<label name="label_compassDayTime" depth="2" pos="70,-40" width="172" height="24" text="  [{daycolor}]{day|always}[-]  [DECEA3]{time|always}[-]" font_size="22" effect="outline"/>
+			
+			<rect name="rect_compassMapStats" pos="40,-40" width="400" height="32" controller="MapStats" anchor="CenterTop">
+				<sprite name="sprite_compassTemp" depth="2" pos="142,-1" size="20,20" sprite="ui_game_symbol_temperature" color="*" foregroundlayer="true"/>
+				<label name="label_compassTemp" depth="2" pos="162,0" width="172" height="24" text=" [DECEA3]{maptemperature}[-]" font_size="22" effect="outline"/>
+				
+				<sprite name="sprite_compassWind" depth="2" pos="222,-1" size="20,20" sprite="ui_game_symbol_wind" color="*" foregroundlayer="true"/>
+				<label name="label_compassWind" depth="2" pos="242,0" width="172" height="24" text=" [DECEA3]{mapwind} MPH[-]" font_size="22" effect="outline"/>
+				
+				<sprite name="sprite_compassElevaytion" depth="2" pos="312,-1" size="20,20" sprite="ui_game_symbol_climb" color="*" foregroundlayer="true"/>
+				<label name="label_compassElevation" depth="2" pos="332,0" width="172" height="24" text=" [DECEA3]{mapelevation} M[-]" font_size="22" effect="outline"/>
+			</rect>
+		</rect>
+	</insertAfter>
+
+	<set xpath="/windows/window[@name='windowForgeInput']/@height">279</set>
+
+	<set xpath="/windows/window[@name='windowForgeInput']/sprite[@name='backgroundMain']/@height">228</set>
+
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content']/@height">228</set>
+
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content']/grid/@rows">3</set>
+
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content2']/@height">223</set>
+
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content2']/grid/@pos">6,-12</set>
+
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content2']/grid/@cell_height">34</set>
+
+	<set xpath="/windows/window[@name='windowCraftingQueue']/rect/@pos">19,0</set>
+
+	<set xpath="/windows/window[@name='windowCraftingQueue']/rect/@width">378</set>
+
+	<set xpath="/windows/window[@name='windowCraftingQueue']/rect//@cols">5</set>
+
+
+	<set xpath="//window[@name='craftingInfoPanel']/@width">670</set>
+
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='requiredToolOverlay']/@pos">417,0</set>
+
+	<set xpath="//window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/sprite[1]/@width">671</set>
+
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='searchControls']/@width">516</set>
+	
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='description']/@width">514</set>
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='description']/sprite[@name='backgroundMain']/@width">520</set>
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='description']//label[@name='descriptionText']/@width">507</set>
+
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='ingredients']/@width">514</set>
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='ingredients']/grid/@width">514</set>
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='ingredients']/grid/@cell_width">514</set>
+
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='unlockedBy']/@width">514</set>
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='unlockedBy']/grid/@width">514</set>
+	<set xpath="//window[@name='craftingInfoPanel']//rect[@name='unlockedBy']/grid/@cell_width">514</set>
+
+	<set xpath="//window[@name='emptyInfoPanel']/@width">670</set>
+
+	<set xpath="//window[@name='emptyInfoPanel']//sprite[@name='backgroundMain']/@width">670</set>
+
+	<set xpath="//window[@name='itemInfoPanel']/@width">673</set>
+
+	<set xpath="//window[@name='itemInfoPanel']/panel[@name='header']/label[2]/@pos">642,-8</set>
+	<set xpath="//window[@name='itemInfoPanel']/panel[@name='header']/sprite[@name='costIcon']/@pos">644,-8</set>
+
+	<set xpath="//window[@name='itemInfoPanel']/rect[@name='contentInfo']/sprite[1]/@width">670</set>
+
+	<set xpath="//window[@name='itemInfoPanel']//rect[@name='searchControls']/@width">515</set>
+	<set xpath="//window[@name='itemInfoPanel']//rect[@name='searchControls']/sprite/@width">516</set>
+
+	<set xpath="//window[@name='itemInfoPanel']//rect[@name='description']/@width">514</set>
+	<set xpath="//window[@name='itemInfoPanel']//rect[@name='description']/sprite[@name='backgroundMain']/@width">520</set>
+	<set xpath="//window[@name='itemInfoPanel']//rect[@name='description']//label[@name='descriptionText']/@width">507</set>
+
+	<set xpath="//window[@name='itemInfoPanel']//rect[@name='description']/rect[1]/@width">520</set>
+	<set xpath="//window[@name='itemInfoPanel']//rect[@name='description']/rect[1]/rect/label/@width">497</set>
+
+	<set xpath="//window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[7]/@width">517</set>
+
+	<append xpath="//window[@name='itemInfoPanel']/rect[@name='contentInfo']">
+		<rect pos="603,-271" width="65" height="73">
+			<sprite name="background" depth="2" color="[mediumGrey]" type="sliced" globalopacity="true"/>
+			<sprite depth="3" name="innerBorder" sprite="menu_empty3px" color="[mediumGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
+		</rect>
+	</append>
+
+	<set xpath="//window[@name='buffInfoPanel']/@width">670</set>
+
+	<set xpath="//window[@name='buffInfoPanel']/rect[@name='contentBuffInfo']/rect/sprite[1]/@width">670</set>
+	
+	<set xpath="//window[@name='buffInfoPanel']/rect//rect[@name='description']/@width">515</set>
+	<set xpath="//window[@name='buffInfoPanel']/rect//rect[@name='description']/sprite[@name='backgroundMain']/@width">520</set>
+	<set xpath="//window[@name='buffInfoPanel']/rect//rect[@name='description']//label[@name='descriptionText']/@width">507</set>
+
+	<set xpath="//window[@name='serviceInfoPanel']/@width">670</set>
+
+	<set xpath="//window[@name='serviceInfoPanel']/panel[@name='header']/label[2]/@pos">416,-8</set>
+	<set xpath="//window[@name='serviceInfoPanel']/panel[@name='header']/sprite[@name='costIcon']/@pos">644,-8</set>
+
+	<set xpath="//window[@name='serviceInfoPanel']/rect[@name='contentInfo']/sprite[1]/@width">670</set>
+	
+	<set xpath="//window[@name='serviceInfoPanel']//rect[@name='description']/@width">514</set>
+	<set xpath="//window[@name='serviceInfoPanel']//rect[@name='description']/sprite[@name='backgroundMain']/@width">520</set>
+	<set xpath="//window[@name='serviceInfoPanel']//rect[@name='description']/label[@name='statText']/@width">321</set>
+	<set xpath="//window[@name='serviceInfoPanel']//rect[@name='description']/label[@name='descriptionText']/@width">507</set>
+
+	<setattribute xpath="//window[@name='interactionPrompt']" name="pos">500,60</setattribute>
+	<setattribute xpath="//window[@name='focusedBlockHealth']" name="pos">500,-40</setattribute>
+	
+	<set xpath="/windows/window[@name='windowBackpack']/@width">673</set>
+
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">370</set>
+
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">673</set>
+
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">5</set>
+
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">10</set>
+
+
+</configs>
